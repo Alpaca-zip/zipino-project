@@ -1,5 +1,8 @@
-# zipino rev1.0 [![](https://img.shields.io/badge/Arduino%20Uno-Compatible-blue?style=flat-square&logo=arduino)](https://github.com/Alpaca-zip/zipino-project/rev1.0) [![](https://img.shields.io/badge/Project%20Status-Prototyping-yellow?style=flat-square)](https://github.com/Alpaca-zip/zipino-project/rev1.0)  
-This is an Arduino compatible board equipped with the MPU6500 IMU sensor.
+# zipino rev1.0 [![](https://img.shields.io/badge/Arduino%20Uno-Compatible-blue?style=flat-square&logo=arduino)](https://github.com/Alpaca-zip/zipino-project/tree/rev1.0) [![](https://img.shields.io/badge/Project%20Status-Prototyping-yellow?style=flat-square)](https://github.com/Alpaca-zip/zipino-project/tree/rev1.0)  
+This is an Arduino compatible board equipped with the MPU6500 IMU sensor.  
+<img src="https://user-images.githubusercontent.com/84959376/199881757-9fbf39ff-2fc9-45b7-8c8e-52a2243728f0.png" width="300px">  
+<img src="https://user-images.githubusercontent.com/84959376/199881782-a1c94b36-6804-4d61-93e2-f85f01182fea.png" width="350px"> <img src="https://user-images.githubusercontent.com/84959376/199881785-2000825d-71e7-4e32-a0d7-3fb3a456c521.png" width="350px">
+
 ## Bill of Materials:wrench:
 - ATMEGA328P-AU
 - FT232RL-REEL
@@ -27,7 +30,7 @@ This is an Arduino compatible board equipped with the MPU6500 IMU sensor.
 ## How to Burn the Bootloader:fire:
 The easiest way to burn the bootloader to zipino is using a second Arduino board as a programmer.
 ### 1. Connect the board
-Connect the PROGRAMMER BOARD and ZIPINO BOARD as shown in the table below.
+Connect the **PROGRAMMER BOARD** and **ZIPINO BOARD** as shown in the table below.
 |  PROGRAMMER BOARD  |  ZIPINO BOARD  |
 | :----------------: | :------------: |
 | 5V | 5V |
@@ -38,3 +41,12 @@ Connect the PROGRAMMER BOARD and ZIPINO BOARD as shown in the table below.
 | D13 | D13 |
 ### 2. Burn the bootloader from Arduino IDE.
   1. Open Arduino IDE.
+  2. Connect the **PROGRAMMER BOARD** to the computer.
+  3. Select your **PROGRAMMER BOARD** in *Tools > Board*, for example *Tools > Board > Arduino AVR Boards > Arduino Uno*.
+  4. Select the port the board is connecting to in *Tools > Port*.
+  5. Open *File > Examples > 11.ArduinoISP > ArduinoISP*.
+  6. Click **Upload** button Upload to upload the sketch to the board.
+  7. Select the **Arduino Uno** in *Tools > Board*.
+  8. Select *Tools > Programmer > Arduino as ISP*.
+  9. We can now start the burning process. To start the process, select *Tools > Burn Bootloader*.
+  > [Arduino Help Center](https://support.arduino.cc/hc/en-us/articles/4841602539164-Burn-the-bootloader-on-UNO-Mega-and-classic-Nano-using-another-Arduino)
